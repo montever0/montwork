@@ -1,0 +1,28 @@
+hi, im montever0 and i design this simple framework for new web developers
+
+so, to start we have a folder named tools were we had 3 files, but we only gonna use one of them
+
+router.php is were we can set our urls, for add one you only need to create a new case in the switch
+and add the uri you want to use, for example "about" like one of the defaults sets of the framework.
+
+then we had to add something to uri page, so we go to echo someting or you can use the function "view"
+
+how to use view function?
+
+view('tittle of the page', 'template you are going to use on them (it is not necessary to write the location and the extension)', 'this is an optional parameter where you can add variables on your template');
+
+how to add variables on my template?
+
+first we had to set it
+
+$variable = [
+    'the name of the variable on the html file' => 'variable value',
+    'the name of the variable on the html file' => 'variable value'
+];
+
+and then we put the variable at the 3rd parameter of the function 'view'
+
+so now we now how to use the router, but were are the templates?, they are in the folder called views, where
+you can work like in a frontend project
+
+and to add a preset variable on your html file, you only have to write <?= $variablename ?> in the html
