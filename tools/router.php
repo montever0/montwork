@@ -5,10 +5,7 @@ include_once 'tools/view.ensambler.php';
 
 switch($uri) {
     case '/':
-        view('home', 'home');
-        break;
-    case '/about':
-        echo 'about';
+        view('home', 'home', '');
         break;
     default:
         echo '404';
