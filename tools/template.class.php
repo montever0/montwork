@@ -6,6 +6,7 @@ class Template {
     public function __construct($path, $data = []) {
         extract($data);
         ob_start();
+        $path = 'views/html/'.$path.'.html';
         include($path);
         $this->content = ob_get_clean();
     }
