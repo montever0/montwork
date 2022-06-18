@@ -1,11 +1,11 @@
 <?php
 $uri = $_SERVER["REQUEST_URI"];
 
-include_once 'tools/view.ensambler.php';
+require_once('tools/template.class.php');
 
 switch($uri) {
     case '/':
-        view('home', 'home', '');
+        echo new Template('home');
         break;
     default:
         echo '404';
